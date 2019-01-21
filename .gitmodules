@@ -4,3 +4,6 @@
 [submodule "openbox"]
 	path = pkg/openbox
 	url = https://github.com/aur-pkg/adapta-midnight-openbox-theme-git.git
+[submodule "theme"]
+	path = theme
+	url = https://github.com/gtk-themes/adapta-midnight.git
