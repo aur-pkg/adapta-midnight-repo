@@ -1,0 +1,19 @@
+sudo: required # this to get sudo permissions
+
+arch: # anything to be tested under Arch is defined below this
+ packages:
+  # pacman packages
+  - yaourt
+  - gtk-engine-murrine
+  - gtk3
+  - git
+  - gnome-shell
+  - libxml2
+  - parallel
+  - sassc
+ script:
+  - cd pkg && makepkg -Acs && cd ../
+
+script: #for setting up arch chroot using the arch travis script
+ - curl -s https://raw.githubusercontent.com/fossasia/arch-travis/master/arch-travis.sh | bash
+ 
